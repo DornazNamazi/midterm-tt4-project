@@ -1,5 +1,16 @@
 import './list-products.scss';
 
+// images
+import one from "./assets/images/1.jpg";
+import two from "./assets/images/2.jpg";
+import third from "./assets/images/3.jpg";
+import fourth from "./assets/images/4.jpg";
+import fifth from "./assets/images/5.jpg";
+import sixth from "./assets/images/6.jpg";
+import seventh from "./assets/images/7.jpg";
+import eighth from "./assets/images/8.jpg";
+import ninth from "./assets/images/9.jpg";
+
 
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -7,26 +18,62 @@ document.addEventListener("DOMContentLoaded", () => {
     const productsContainer = document.getElementById('products');
 
     const products = [
-        { image: 'assets/images/1.jpg', title: 'Product 1', description: 'High-quality product.', price: '$10' },
-        { image: 'assets/images/2.jpg', title: 'Product 2', description: 'Durable and reliable.', price: '$15' },
-        { image: 'assets/images/3.jpg', title: 'Product 3', description: 'Sleek and stylish.', price: '$20' },
-        { image: 'assets/images/4.jpg', title: 'Product 4', description: 'Perfect for everyday use.', price: '$25' },
-        { image: 'assets/images/5.jpg', title: 'Product 5', description: 'A must-have item.', price: '$30' },
-        { image: 'assets/images/6.jpg', title: 'Product 6', description: 'Top-rated quality.', price: '$35' },
-        { image: 'assets/images/7.jpg', title: 'Product 7', description: 'Best value for money.', price: '$40' },
-        { image: 'assets/images/8.jpg', title: 'Product 8', description: 'User-friendly design.', price: '$45' },
-        { image: 'assets/images/9.jpg', title: 'Product 9', description: 'Limited edition.', price: '$50' }
+        {
+            name: 'Painting',
+            description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
+            image: one
+        },
+        {
+            name: 'Painting',
+            description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
+            image: two
+        },
+        {
+            name: 'Painting',
+            description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
+            image: third
+        },
+        {
+            name: "Painting",
+            description: "A trendy hat to complement your outfit.",
+            image: fourth
+        },
+        {
+            name: "Painting",
+            description: "Elegant and comfortable wooden chair.",
+            image: fifth
+        },
+        {
+            name: "Painting",
+            description: "Lightweight and comfortable running shoes.",
+            image: sixth
+        },
+        {
+            name: "Painting",
+            description: "A fragrance that makes a statement.",
+            image: seventh
+        },
+        {
+            name: "Painting",
+            description: "Keeps your skin soft and smooth.",
+            image: eighth
+        },
+        {
+            name: "Painting",
+            description: "A unique blend of aromatic notes.",
+            image: ninth
+        }
     ];
 
     products.forEach(product => {
         const cardDiv = document.createElement('div');
         cardDiv.classList.add('card');
-        
+
         const img = document.createElement('img');
         img.classList.add('card-img-top');
         img.src = product.image;
         img.alt = product.name;
-        img.style.maxWidth = '100%'; 
+        img.style.maxWidth = '100%';
         img.style.maxHeight = '200px';
         img.style.objectFit = 'cover'
 
@@ -56,40 +103,3 @@ document.addEventListener("DOMContentLoaded", () => {
         productsContainer.appendChild(cardDiv);
     });
 });
-
-
-
-import './list-products.scss';  // Import SCSS for styling
-
-    const products = [
-        { image: 'assets/images/1.jpg', title: 'Product 1', description: 'High-quality product.', price: '$10' },
-        { image: 'assets/images/2.jpg', title: 'Product 2', description: 'Durable and reliable.', price: '$15' },
-        { image: 'assets/images/3.jpg', title: 'Product 3', description: 'Sleek and stylish.', price: '$20' },
-        { image: 'assets/images/4.jpg', title: 'Product 4', description: 'Perfect for everyday use.', price: '$25' },
-        { image: 'assets/images/5.jpg', title: 'Product 5', description: 'A must-have item.', price: '$30' },
-        { image: 'assets/images/6.jpg', title: 'Product 6', description: 'Top-rated quality.', price: '$35' },
-        { image: 'assets/images/7.jpg', title: 'Product 7', description: 'Best value for money.', price: '$40' },
-        { image: 'assets/images/8.jpg', title: 'Product 8', description: 'User-friendly design.', price: '$45' },
-        { image: 'assets/images/9.jpg', title: 'Product 9', description: 'Limited edition.', price: '$50' }
-    ];
-
-    document.addEventListener("DOMContentLoaded", () => {
-        const productList = document.getElementById("product-list");
-        products.forEach(product => {
-            const productCard = `
-                <div class="col-md-4 mb-4">
-                    <div class="card">
-                        <img src="${product.image}" class="card-img-top" alt="${product.title}">
-                        <div class="card-body">
-                            <h5 class="card-title">${product.title}</h5>
-                            <p class="card-text">${product.description}</p>
-                            <p class="card-text"><strong>${product.price}</strong></p>
-                            <button class="btn btn-primary">Add to Cart</button>
-                        </div>
-                    </div>
-                </div>`;
-            productList.innerHTML += productCard;
-        });
-    });
-
-    
