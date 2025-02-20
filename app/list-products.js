@@ -35,32 +35,32 @@ document.addEventListener("DOMContentLoaded", () => {
         },
         {
             name: "Painting",
-            description: "A trendy hat to complement your outfit.",
+            description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
             image: fourth
         },
         {
             name: "Painting",
-            description: "Elegant and comfortable wooden chair.",
+            description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
             image: fifth
         },
         {
             name: "Painting",
-            description: "Lightweight and comfortable running shoes.",
+            description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
             image: sixth
         },
         {
             name: "Painting",
-            description: "A fragrance that makes a statement.",
+            description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
             image: seventh
         },
         {
             name: "Painting",
-            description: "Keeps your skin soft and smooth.",
+            description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
             image: eighth
         },
         {
             name: "Painting",
-            description: "A unique blend of aromatic notes.",
+            description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
             image: ninth
         }
     ];
